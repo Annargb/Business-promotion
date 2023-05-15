@@ -386,10 +386,10 @@ img {
 .customer-support-item::before {
   display: block;
   width: 36px;
-  height: 35px;
+  height: 36px;
   content: "";
   background-repeat: no-repeat;
-  background-size: 35px 35px;
+  background-size: cover;
   background-position: center;
   margin-right: 30px;
 }
