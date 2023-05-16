@@ -383,26 +383,3 @@ img {
 .customer-support-item:last-child {
   margin-bottom: 0;
 }
-
-.customer-support-item::before {
-  display: block;
-  width: 36px;
-  height: 36px;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-right: 30px;
-}
-
-.customer-support-item:nth-child(1)::before {
-  background-image: url("../images/orange.svg");
-}
-
-.customer-support-item:nth-child(2)::before {
-  background-image: url("../images/red.svg");
-}
-
-.customer-support-item:nth-child(3)::before {
-  background-image: url("../images/blue.svg");
-}
