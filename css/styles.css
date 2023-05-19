@@ -12,6 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--color-text);
   background-color: var(--white-color);
+  padding-top: 80px;
 }
 
 /* Resets */
@@ -91,6 +92,12 @@ img {
 /* Header */
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: var(--white-color);
 }
 
 .header-container {
