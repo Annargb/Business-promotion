@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600;700&family=Raleway:wght@800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,35 +21,42 @@
     <!-- Header -->
     <header class="header">
       <div class="header-container container">
-        <nav class="navigations">
-          <a href="" class="logo link">Product</a>
-          <ul class="navigations-list list">
-            <li class="navigations-item">
-              <a href="./index.html" class="navigations-link link">Product</a>
+        <a href="" class="logo-link link">
+          <svg class="logo-img" width="40" height="36">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+          <p class="logo">Product</p>
+        </a>
+        <div class="header-without-logo">
+          <nav class="navigations">
+            <ul class="navigations-list list">
+              <li class="navigations-item">
+                <a href="./index.html" class="navigations-link link">Product</a>
+              </li>
+              <li class="navigations-item">
+                <a href="" class="navigations-link link">Pricing</a>
+              </li>
+              <li class="navigations-item">
+                <a href="" class="navigations-link link">Customers</a>
+              </li>
+              <li class="navigations-item">
+                <a href="" class="navigations-link link">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="button-list list">
+            <li>
+              <button type="button" class="light-button sign-in-button button">
+                Sign In
+              </button>
             </li>
-            <li class="navigations-item">
-              <a href="" class="navigations-link link">Pricing</a>
-            </li>
-            <li class="navigations-item">
-              <a href="" class="navigations-link link">Customers</a>
-            </li>
-            <li class="navigations-item">
-              <a href="" class="navigations-link link">Resources</a>
+            <li>
+              <button type="button" class="dark-button sign-up-button button">
+                Sign Up
+              </button>
             </li>
           </ul>
-        </nav>
-        <ul class="button-list list">
-          <li>
-            <button type="button" class="light-button sign-in-button button">
-              Sign In
-            </button>
-          </li>
-          <li>
-            <button type="button" class="dark-button sign-up-button button">
-              Sign Up
-            </button>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -131,16 +138,24 @@
                   characteristics, traits, personal choices and the overall
                   personality of the person.
                 </p>
-                <h5 class="product-description-subtitle">Accessory makers</h5>
-                <p class="description">
-                  While most people enjoy casino gambling, sports betting,
-                  lottery and bingo playing for the fun
-                </p>
-                <h5 class="product-description-subtitle">Alterationists</h5>
-                <p class="description">
-                  If you are looking for a new way to promote your business that
-                  won’t cost you more money,
-                </p>
+                <ul class="list">
+                  <li class="subtitle-text-description">
+                    <h5 class="product-description-subtitle">
+                      Accessory makers
+                    </h5>
+                    <p class="description">
+                      While most people enjoy casino gambling, sports betting,
+                      lottery and bingo playing for the fun
+                    </p>
+                  </li>
+                  <li>
+                    <h5 class="product-description-subtitle">Alterationists</h5>
+                    <p class="description">
+                      If you are looking for a new way to promote your business
+                      that won’t cost you more money,
+                    </p>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -197,16 +212,24 @@
                   over the past three decades, women still face a double
                   standard when it comes to their behavior.
                 </p>
-                <h5 class="product-description-subtitle">Accessory makers</h5>
-                <p class="description">
-                  While most people enjoy casino gambling, sports betting,
-                  lottery and bingo playing for the fun
-                </p>
-                <h5 class="product-description-subtitle">Alterationists</h5>
-                <p class="description">
-                  If you are looking for a new way to promote your business that
-                  won’t cost you more money,
-                </p>
+                <ul class="list">
+                  <li class="subtitle-text-description">
+                    <h5 class="product-description-subtitle">
+                      Accessory makers
+                    </h5>
+                    <p class="description">
+                      While most people enjoy casino gambling, sports betting,
+                      lottery and bingo playing for the fun
+                    </p>
+                  </li>
+                  <li>
+                    <h5 class="product-description-subtitle">Alterationists</h5>
+                    <p class="description">
+                      If you are looking for a new way to promote your business
+                      that won’t cost you more money,
+                    </p>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -221,8 +244,8 @@
             Do you require some help for your project: Conception workshop,
             prototyping, marketing strategy, landing page, Ux/UI?
           </p>
-          <div class="left-side">
-            <div class="employee-one">
+          <ul class="employee-list list">
+            <li class="employee-one">
               <img
                 src="./images/avatar-1.png"
                 alt="employee"
@@ -231,8 +254,175 @@
                 class="employee-one-img"
               />
               <p class="employee-text">I can take care of your pitch</p>
-            </div>
-          </div>
+            </li>
+            <li class="employee-one">
+              <img
+                src="./images/avatar-3.png"
+                alt="employee"
+                width="98"
+                height="98"
+                class="employee-one-img"
+              />
+              <p class="employee-text">I can prototype your app</p>
+            </li>
+            <li class="employee-one">
+              <img
+                src="./images/avatar-2-min.png"
+                alt="employee"
+                width="98"
+                height="98"
+                class="employee-one-img"
+              />
+              <p class="employee-text">I can design your website</p>
+            </li>
+            <li class="employee-one">
+              <img
+                src="./images/avatar-4.png"
+                alt="employee"
+                width="98"
+                height="98"
+                class="employee-one-img"
+              />
+              <p class="employee-text">I can help marketing strategy</p>
+            </li>
+          </ul>
+          <button type="button" class="employee-button button dark-button">
+            Contact our expert
+          </button>
+        </div>
+      </section>
+
+      <!-- Section news -->
+      <section class="news-section">
+        <div class="container">
+          <h2 class="news-section-title">Contents Strategies</h2>
+          <p class="news-section-description">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <ul class="news-list list">
+            <li class="news-list-item">
+              <a href="" class="news-card-link link">
+                <img
+                  src="./images/news-1.jpg"
+                  alt="working people"
+                  width="350"
+                  height="185"
+                />
+                <div class="news-text-wrapper">
+                  <p class="news-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                  <h3 class="news-subtitle">
+                    Increasing Prosperity With Positive Thinking
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="news-list-item">
+              <a href="" class="news-card-link link">
+                <img
+                  src="./images/news-2.jpg"
+                  alt="working people"
+                  width="350"
+                  height="185"
+                />
+                <div class="news-text-wrapper">
+                  <p class="news-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                  <h3 class="news-subtitle">
+                    Motivation Is The First Step To Success
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="news-list-item">
+              <a href="" class="news-card-link link">
+                <img
+                  src="./images/news-3.jpg"
+                  alt="working people"
+                  width="350"
+                  height="185"
+                />
+                <div class="news-text-wrapper">
+                  <p class="news-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                  <h3 class="news-subtitle">
+                    Success Steps For Your Personal Or Business
+                  </h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section Prices -->
+      <section class="section-prices">
+        <div class="container">
+          <h2 class="section-prices-title">Price Table</h2>
+          <p class="section-prices-text">We offer competitive price</p>
+          <ul class="section-prices-list list">
+            <li class="section-prices-item">
+              <h3 class="title-prices-card">Free</h3>
+              <p class="text-prices-card">Brief price description</p>
+              <div class="cost-wrapper">
+                <p class="cost-text">0</p>
+                <div class="cost-text-wrapper">
+                  <p class="dollar">$</p>
+                  <p class="cost-description">Per / month</p>
+                </div>
+              </div>
+              <ul class="list">
+                <li class="description-prices-card">Only 2 Operators</li>
+                <li class="description-prices-card">Notifications</li>
+                <li class="description-prices-card last-prices-text">
+                  Landing Pages
+                </li>
+              </ul>
+              <button type="button" class="prices-button dark-button button">
+                Order Now
+              </button>
+            </li>
+            <li class="section-prices-item">
+              <h3 class="title-prices-card">Standard</h3>
+              <p class="text-prices-card">Brief price description</p>
+              <div class="cost-wrapper">
+                <p class="cost-text cost-text-light">5</p>
+                <div class="cost-text-wrapper">
+                  <p class="dollar dollar-light">$</p>
+                  <p class="cost-description">Per / month</p>
+                </div>
+              </div>
+              <ul class="list">
+                <li class="description-prices-card">5+ Operators</li>
+                <li class="description-prices-card">Notifications</li>
+                <li class="description-prices-card last-prices-text">
+                  Landing Pages
+                </li>
+              </ul>
+              <button type="button" class="prices-button light-button button">
+                Order Now
+              </button>
+            </li>
+            <li class="section-prices-item">
+              <h3 class="title-prices-card">Premium</h3>
+              <p class="text-prices-card">Brief price description</p>
+              <div class="cost-wrapper">
+                <p class="cost-text">10</p>
+                <div class="cost-text-wrapper">
+                  <p class="dollar">$</p>
+                  <p class="cost-description">Per / month</p>
+                </div>
+              </div>
+              <ul class="list">
+                <li class="description-prices-card">10+ Operators</li>
+                <li class="description-prices-card">Notifications</li>
+                <li class="description-prices-card last-prices-text">
+                  Landing Pages
+                </li>
+              </ul>
+              <button type="button" class="prices-button dark-button button">
+                Order Now
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
 
