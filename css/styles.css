@@ -8,6 +8,8 @@
   --dark-text-color: #252b42;
   --border-card-color: #dedede;
   --price-text: #afafaf;
+  --hover-social-links: #edfffc;
+  --timing-duration-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -108,7 +110,6 @@ img {
   margin-right: 16px;
 }
 .logo {
-  margin-right: 237px;
   font-weight: 700;
   font-size: 30px;
   line-height: 0.93;
@@ -119,6 +120,7 @@ img {
 .header-without-logo {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .navigations-list {
@@ -747,4 +749,135 @@ img {
   border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  padding-bottom: 40px;
+}
+
+.footer-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.logo-socials-links {
+  margin-right: 146px;
+}
+
+.logo-footer {
+  margin-bottom: 18px;
+  padding: 0;
+}
+
+.social-links-list {
+  display: flex;
+
+  align-items: center;
+  gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+
+  transition: background-color var(--timing-duration-function);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--hover-social-links);
+}
+
+.resource-list-wrapper {
+  margin-right: 129px;
+}
+
+.footer-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+
+  margin-bottom: 8px;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.footer-link-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.19;
+  color: var(--color-text);
+}
+
+.footer-link-item:hover,
+.footer-link-item:focus {
+  color: var(--background-color-button);
+}
+
+.stuff-list-wrapper {
+  margin-right: 83px;
+}
+
+.footer-title-form {
+  margin-bottom: 30px;
+  max-width: 280px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.phone-number-form {
+  width: 100%;
+  padding: 10px 42px;
+  font-size: 16px;
+  line-height: 1.75;
+
+  color: var(--background-color-button);
+  background-color: transparent;
+  border: 1px solid var(--border-button-color);
+  border-radius: 4px;
+  outline: transparent;
+}
+
+.phone-number-form:focus-within {
+  outline: 1px solid var(--background-color-button);
+}
+
+.phone-number-form::placeholder {
+  color: var(--background-color-button);
+}
+.footer-form {
+  width: 325px;
+}
+.label-form {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.phone-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.form-button {
+  min-width: 131px;
+  padding: 8px 15px;
+}
+
+.footer-bottom-text {
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
 }
