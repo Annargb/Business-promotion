@@ -1365,7 +1365,64 @@ img {
 }
 
 .hero-resources-text {
+  margin-bottom: 24px;
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: -0.03em;
+}
+
+.button-hero-resources {
+  display: inline-block;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 25px 19px 25px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 0px;
+  border: none;
+  border-radius: 100px;
+}
+
+.hero-form {
+  margin-bottom: 24px;
+}
+
+.input-button-wrapper {
+  position: relative;
+  max-width: 469px;
+}
+
+.user-email-form {
+  width: 100%;
+  min-height: 66px;
+  padding: 8px 130px 8px 27px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid #eaeaea;
+  border-radius: 100px;
+}
+
+.user-email-form::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.hero-resources-subtext {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.resources-numbers {
+  color: var(--background-color-button);
 }
